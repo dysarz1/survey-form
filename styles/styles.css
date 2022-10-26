@@ -1,0 +1,11 @@
+body {
+    background-color: darkslategray;
+}
+
+.container {
+    background-color: darkgrey;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 5em;
+    margin-right: 5em;
+}
