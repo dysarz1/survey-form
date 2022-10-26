@@ -1,5 +1,17 @@
 body {
     background-color: darkslategray;
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#top-of-page {
+    margin: 2em auto;
+    background-color: black;
+    color: azure;
+    border-style: groove;
+    border-radius: 15px 15px 5px 5px;
 }
 
 .container {
@@ -8,4 +20,30 @@ body {
     margin-bottom: 2em;
     margin-left: 5em;
     margin-right: 5em;
+    border-radius: 15px 15px 40px 30px;
+}
+
+form {
+    text-align: center;
+    padding-bottom: 1em;
+    
+}
+fieldset {
+    border: none;
+}
+
+div {
+    text-align: center;
+}
+
+.nonsubmit {
+    width: 150px;
+}
+
+#submit {
+    background-color: green;
+    width: 150px;
+    height: 25px;
+    margin-top: 1em;
+    margin-bottom: 2em;
 }
