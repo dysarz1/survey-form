@@ -1,86 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="./styles/styles.css">
-        <meta charset="utf-8">
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <meta charset="utf-8" />
         <title>Survey Form</title>
     </head>
     <body>
         <div class="container">
-            <h1 id="title">Survey Form</h1>
-            <p id="description">Please fill out this form</p>
-            <form>
+            <div id="top-of-page">
+                <h1 id="title">Survey Form</h1>
+                <p id="description">Please fill out this form</p>
+            </div>
+            <form id="survey-form">
                 <fieldset id="identifier">
                     <div class="form-group">
-                        <label></label>
-                        <input>
+                        <label id="name-label" for="name">Name</label>
+                        <input id="name" class="nonsubmit" type="text" name="name" required placeholder="Enter name here" />
                     </div>
                     <div class="form-group">
-                        <label></label>
-                        <input>
+                        <label id="email-label" for="email">Email</label>
+                        <input id="email" class="nonsubmit" type="email" name="email" required placeholder="Enter email here" />
                     </div>
                     <div class="form-group">
-                        <label></label>
-                        <input>
+                        <label id="number-label" for="number">Age</label>
+                        <input id="number" class="nonsubmit" input="nonsubmit" type="number" name="age" min="18" max="120" required placeholder="Enter age here" />
                     </div>
                     <div class="form-group">
-                        <label></label>
-                        <input>
+                        <label for="dropdown">Role</label>
+                        <select id="dropdown"  class="nonsubmit" name="role" required>
+                            <option>Select current role</option>
+                            <option>Student</option>
+                            <option>Teacher</option>
+                        </select>
                     </div>
                 </fieldset>
                 <fieldset id="information">
                     <div class="form-group">
-                        <label for="">
-                            <select name="" id="">
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                            </select>
-                        </label>
+                        <p class="label-grouping-name">How good is this survey?</p>
+                    <label><input id="great" type="radio" name="how-good" class="inline" value="great" />Great!</label>
+                    <label><input id="good" type="radio" name="how-good" class="inline" value="good" />Good</label>
+                    <label><input id="bad" type="radio" name="how-good" class="inline" value="bad" />bad</label>
                     </div>
                     <div class="form-group">
-                        <p class="label-grouping-name"></p>
-                    <label></label>
-                    <label></label>
-                    <label></label>
-                    </div>
-                    <div class="form-group">
-                        <label for="">
-                            <select name="" id="">
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                            </select>
-                        </label>
-                    </div>
-                    <div class="form-group">
-                        <p>
-                            <span class="cluee"></span>
-                        </p>
-                        <label></label>
-                        <label></label>
-                        <label></label>
-                        <label></label>
-                        <label></label>
-                        <label></label>
-                        <label></label>
-                        <label></label>
-                        <label></label>
-                        <label></label>
-                        <label></label>
+                        <p>What would you want me to work on next</p>
+                        <label for="more-webdev">
+                            <input id="more-webdev" type="checkbox" value="more-webdev" />More more webdev please</label>
+                        <label for="data-science">
+                            <input id="data-science" type="checkbox" value="data-science">Data science</label>
                     </div>
                     <div class="form-group">
                         <p></p>
                         <textarea></textarea>
                     </div>
                 </fieldset>
-                <input type="submit" value="submit">
+                <input id="submit" type="submit" value="submit">
             </form>
         </div>
     </body>
